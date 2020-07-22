@@ -5,9 +5,9 @@ import { extract } from "../core/helper";
 import { AuthGuard } from "../auth/auth.guard";
 
 const routes: Routes = [
-  { path: "", redirectTo: "/home", pathMatch: "full" },
+  { path: "", redirectTo: "/", pathMatch: "full" },
   {
-    path: "home",
+    path: "",
     component: HomeComponent,
     data: { title: extract("Home") },
     canActivate: [AuthGuard],

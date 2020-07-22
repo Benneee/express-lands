@@ -5,7 +5,7 @@ export interface Credentials {
   id: string;
   createdAt?: string;
   name: string;
-  position: string;
+  position?: string;
   notification_count: number;
   verification_status: boolean;
 }
