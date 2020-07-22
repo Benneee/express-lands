@@ -1,1 +1,69 @@
-<p>login works!</p>
+<main class="container-fluid">
+  <section class="row">
+    <section class="backdrop col-md-8 col-12">
+      <!-- <img src="../../../assets/images/login.svg" alt="Login" /> -->
+    </section>
+    <section class="login-section col-md-4 col-12 align-self-center">
+      <div class="login-box">
+        <img
+          src="../../../assets/images/Group 13.png"
+          alt="Express Lands"
+          class="img-fluid express-img"
+        />
+        <div class="form-header mb-4">
+          <h2 class="font-weight-bold">
+            Login to <br />
+            your account
+          </h2>
+          <p class="mt-2">Welcome back! Please login to your account</p>
+        </div>
+
+        <form [formGroup]="loginForm" (ngSubmit)="submit()">
+          <div class="form-group">
+            <input
+              type="text"
+              placeholder="Enter Username"
+              class="form-control"
+              formControlName="username"
+            />
+            <small
+              class="text-danger"
+              *ngIf="controls?.username.invalid && controls?.username.touched"
+            >
+              Username is required
+            </small>
+          </div>
+
+          <div class="form-group">
+            <input
+              type="password"
+              placeholder="Enter Password"
+              class="form-control"
+              formControlName="password"
+            />
+            <small
+              class="text-light"
+              *ngIf="controls?.password.invalid && controls?.password.touched"
+            >
+              Password is required
+            </small>
+          </div>
+
+          <button
+            class="btn btn-block submit-btn btn-md"
+            type="submit"
+            [disabled]="!loginForm.valid || isLoading"
+          >
+            <span>
+              <i [hidden]="!isLoading" class="fa fa-spinner fa-spin"></i>
+            </span>
+            LOG IN
+          </button>
+        </form>
+        <p class="text-primary text-center mt-3">
+          <a> Forgot Password</a>
+        </p>
+      </div>
+    </section>
+  </section>
+</main>
