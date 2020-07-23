@@ -78,6 +78,10 @@ export class LoginComponent implements OnInit, OnDestroy {
         },
         (error) => {
           log.debug("error: ", error);
+          const err = JSON.parse(error);
+          if (err.status === 400) {
+            this.toastr.error(err.name);
+          }
         }
       );
   }
