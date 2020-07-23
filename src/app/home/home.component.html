@@ -1,0 +1,479 @@
+<main class="grid-container mb-5 pb-5">
+  <header class="header">
+    <div class="menu-icon">
+      <img
+        src="../../assets/images/menu, more, detail, list, interface.svg"
+        alt="Menu"
+      />
+    </div>
+    <div class="notif-auth">
+      <div class="card header__notifications-center">
+        <div class="row">
+          <div class="col-3">
+            <svg
+              width="50"
+              height="71"
+              class="card-img-top"
+              viewBox="0 0 50 71"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M19 71C23.2625 71 26.75 67.5846 26.75 63.4103H11.25C11.25 67.5846 14.6987 71 19 71ZM42.25 48.2308V29.2564C42.25 17.6062 35.895 7.85333 24.8125 5.27282V2.69231C24.8125 -0.457436 22.2163 -3 19 -3C15.7838 -3 13.1875 -0.457436 13.1875 2.69231V5.27282C2.06625 7.85333 -4.25 17.5682 -4.25 29.2564V48.2308L-12 55.8205V59.6154H50V55.8205L42.25 48.2308Z"
+                fill="#FEF6E7"
+              />
+            </svg>
+          </div>
+          <div class="col-8 move-left align-self-center">
+            <div class="card-text">
+              <p class="p-0 mb-0 mt-2">Notifications Center</p>
+              <small
+                >You have <span class="font-weight-bold">2</span> unread
+                notifications</small
+              >
+            </div>
+          </div>
+          <div class="col-3 align-self-center justify-content-end">
+            <div class="notif-box text-center align-content-center">
+              <span class="text-center two text-light">2</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card header__auth-box ml-4">
+        <div class="row">
+          <div class="col-3">
+            <svg
+              width="50"
+              height="68"
+              viewBox="0 0 50 68"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M18.5 38.25C28.2822 38.25 36.2188 29.6836 36.2188 19.125C36.2188 8.56641 28.2822 0 18.5 0C8.71777 0 0.78125 8.56641 0.78125 19.125C0.78125 29.6836 8.71777 38.25 18.5 38.25ZM34.25 42.5H27.4701C24.7385 43.8547 21.6992 44.625 18.5 44.625C15.3008 44.625 12.2738 43.8547 9.52988 42.5H2.75C-5.94941 42.5 -13 50.1102 -13 59.5V61.625C-13 65.1445 -10.3545 68 -7.09375 68H44.0938C47.3545 68 50 65.1445 50 61.625V59.5C50 50.1102 42.9494 42.5 34.25 42.5Z"
+                fill="#E9F1FB"
+              />
+            </svg>
+          </div>
+          <div class="col-8 move-left align-self-center">
+            <div class="card-text">
+              <p class="p-0 mb-0 mt-2">Chidinma Nwanya</p>
+              <small>Vanity By Juls</small>
+            </div>
+          </div>
+
+          <div class="col-3 align-self-center justify-content-end">
+            <div
+              class="log-out text-center align-content-center"
+              (click)="logOut()"
+            >
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 16 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M8.83333 0.5H7.16667V8.83333H8.83333V0.5ZM12.8583 2.30833L11.675 3.49167C12.9917 4.55 13.8333 6.175 13.8333 8C13.8333 11.225 11.225 13.8333 8 13.8333C4.775 13.8333 2.16667 11.225 2.16667 8C2.16667 6.175 3.00833 4.55 4.31667 3.48333L3.14167 2.30833C1.525 3.68333 0.5 5.71667 0.5 8C0.5 12.1417 3.85833 15.5 8 15.5C12.1417 15.5 15.5 12.1417 15.5 8C15.5 5.71667 14.475 3.68333 12.8583 2.30833Z"
+                  fill="white"
+                />
+              </svg>
+              <span class="smaller-text text-light">Logout</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <aside class="sidenav">
+    <div class="container">
+      <div class="row">
+        <div class="col-8 img-holder offset-2">
+          <img
+            src="../../assets/images/Group 13.png"
+            alt="Express Lands"
+            class="img-fluid"
+          />
+        </div>
+      </div>
+    </div>
+
+    <ul class="sidenav__list mb-3 p-1">
+      <li class="sidenav__list-item active">
+        <a routerLink="/">
+          <span class="mr-3">
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M10.4 18.6V13.8H13.6V18.6H17.6V12.2H20L12 5L4 12.2H6.4V18.6H10.4Z"
+                fill="#0F9CDA"
+              />
+            </svg>
+          </span>
+          <span>Dashboard</span>
+        </a>
+      </li>
+
+      <li class="sidenav__list-item">
+        <a routerLink="/">
+          <span class="mr-3">
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M7.10855 15.475H4.44408C4.19895 15.475 4 15.674 4 15.9191V20.3066C4 20.5517 4.19895 20.7507 4.44408 20.7507H7.10855C7.35368 20.7507 7.55262 20.5517 7.55262 20.3066V15.9191C7.55262 15.6731 7.35456 15.475 7.10855 15.475ZM6.66447 19.8625H4.88816V16.3632H6.66447V19.8625Z"
+                fill="#B7BDCD"
+              />
+              <path
+                d="M19.9593 16.3481C19.7461 15.6367 18.5747 14.546 17.8437 14.546C17.698 14.546 17.5666 14.5815 17.452 14.6517L13.2004 17.2513H11.9934V15.9191C11.9934 15.674 11.7945 15.475 11.5493 15.475H8.88487C8.63974 15.475 8.4408 15.674 8.4408 15.9191V20.3066C8.4408 20.5517 8.63974 20.7507 8.88487 20.7507H14.1312C14.2183 20.7507 14.3026 20.7258 14.3746 20.6778L19.7035 17.1785C19.9673 17.0053 20.0623 16.6954 19.9593 16.3481ZM13.9989 19.8625H9.32895V16.3632H11.1053V17.6954C11.1053 17.9406 11.3042 18.1395 11.5493 18.1395H13.3257C13.4074 18.1395 13.4873 18.1173 13.5575 18.0747L17.8437 15.4342C18.1315 15.4386 18.9166 16.15 19.0827 16.5239L13.9989 19.8625Z"
+                fill="#B7BDCD"
+              />
+              <path
+                d="M10.6612 9.21708C10.416 9.21708 10.2171 9.41603 10.2171 9.66116C10.2171 9.90629 10.416 10.1052 10.6612 10.1052H12.8816V12.3256C12.8816 12.5708 13.0805 12.7697 13.3256 12.7697C13.5708 12.7697 13.7697 12.5708 13.7697 12.3256V10.1052H15.9901C16.2352 10.1052 16.4342 9.90629 16.4342 9.66116C16.4342 9.41603 16.2352 9.21708 15.9901 9.21708H13.7697V6.99669C13.7697 6.75156 13.5708 6.55261 13.3256 6.55261C13.0805 6.55261 12.8816 6.75156 12.8816 6.99669V9.21708H10.6612Z"
+                fill="#B7BDCD"
+              />
+              <path
+                d="M15.9901 5.66447H17.3223V6.9967C17.3223 7.24183 17.5213 7.44078 17.7664 7.44078C18.0115 7.44078 18.2105 7.24183 18.2105 6.9967V5.66447H19.5427C19.7879 5.66447 19.9868 5.46552 19.9868 5.22039C19.9868 4.97526 19.7879 4.77631 19.5427 4.77631H18.2105V3.44408C18.2105 3.19895 18.0115 3 17.7664 3C17.5213 3 17.3223 3.19895 17.3223 3.44408V4.77631H15.9901C15.745 4.77631 15.546 4.97526 15.546 5.22039C15.546 5.46552 15.745 5.66447 15.9901 5.66447Z"
+                fill="#B7BDCD"
+              />
+              <path
+                d="M8.88487 5.66446H9.32895V6.10854C9.32895 6.35367 9.5279 6.55262 9.77303 6.55262C10.0182 6.55262 10.2171 6.35367 10.2171 6.10854V5.66446H10.6612C10.9063 5.66446 11.1053 5.46552 11.1053 5.22039C11.1053 4.97526 10.9063 4.77631 10.6612 4.77631H10.2171V4.33223C10.2171 4.0871 10.0182 3.88815 9.77303 3.88815C9.5279 3.88815 9.32895 4.0871 9.32895 4.33223V4.77631H8.88487C8.63974 4.77631 8.4408 4.97526 8.4408 5.22039C8.4408 5.46552 8.63974 5.66446 8.88487 5.66446Z"
+                fill="#B7BDCD"
+              />
+            </svg>
+          </span>
+          <span>
+            Menu Item One
+          </span>
+        </a>
+      </li>
+      <li class="sidenav__list-item">
+        <a routerLink="/">
+          <span class="mr-3">
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g clip-path="url(#clip0)">
+                <path
+                  d="M15.3334 18V16.6667C15.3334 15.9594 15.0524 15.2811 14.5523 14.781C14.0522 14.281 13.3739 14 12.6667 14H7.33335C6.62611 14 5.94783 14.281 5.44774 14.781C4.94764 15.2811 4.66669 15.9594 4.66669 16.6667V18"
+                  stroke="#B7BDCD"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M9.99998 11.3333C11.4727 11.3333 12.6666 10.1394 12.6666 8.66667C12.6666 7.19391 11.4727 6 9.99998 6C8.52722 6 7.33331 7.19391 7.33331 8.66667C7.33331 10.1394 8.52722 11.3333 9.99998 11.3333Z"
+                  stroke="#B7BDCD"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M19.3333 18V16.6667C19.3329 16.0758 19.1362 15.5019 18.7742 15.0349C18.4122 14.5679 17.9054 14.2344 17.3333 14.0867"
+                  stroke="#B7BDCD"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M14.6667 6.08667C15.2403 6.23354 15.7487 6.56714 16.1118 7.03488C16.4748 7.50262 16.6719 8.07789 16.6719 8.67C16.6719 9.26212 16.4748 9.83739 16.1118 10.3051C15.7487 10.7729 15.2403 11.1065 14.6667 11.2533"
+                  stroke="#B7BDCD"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </g>
+              <defs>
+                <clipPath id="clip0">
+                  <rect
+                    width="16"
+                    height="16"
+                    fill="white"
+                    transform="translate(4 4)"
+                  />
+                </clipPath>
+              </defs>
+            </svg>
+          </span>
+          <span>
+            Menu Item Two
+          </span>
+        </a>
+      </li>
+      <li class="sidenav__list-item">
+        <a routerLink="/">
+          <span class="mr-3">
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M8.34918 12.2925V11.1479C6.41274 10.9507 4.84269 10.2753 4 9.35288V9.59178C4 10.8869 5.84892 12.0225 8.34918 12.2925ZM8.34918 12.974C6.41469 12.7786 4.84486 12.0994 4 11.177V11.4181C4 12.7149 5.84892 13.8484 8.34918 14.1214V13.5785H8.35309C8.35114 13.5426 8.34918 13.5088 8.34918 13.4729V12.974ZM14.5132 16.9175C12.0905 16.9175 10.0391 16.1743 9.02637 15.0666V15.3016C9.02637 16.802 11.5386 18.0669 14.5132 18.0669C17.4878 18.0669 20 16.802 20 15.3016V15.0666C18.9857 16.1743 16.9337 16.9175 14.5132 16.9175ZM14.5132 15.0886C12.0905 15.0886 10.0391 14.3475 9.02637 13.2399V13.4749C9.02637 14.9735 11.5386 16.2401 14.5132 16.2401C17.4878 16.2401 20 14.973 20 13.4749V13.2399C18.9857 14.3475 16.9337 15.0886 14.5132 15.0886ZM14.5132 13.2616C12.0905 13.2616 10.0391 12.5186 9.02637 11.4109V11.6479C9.02637 13.1465 11.5386 14.4112 14.5132 14.4112C17.4878 14.4112 20 13.1461 20 11.6479V11.4109C18.9857 12.5186 16.9337 13.2616 14.5132 13.2616ZM14.5132 11.4348C12.0905 11.4348 10.0391 10.6916 9.02637 9.58396V9.81918C9.02637 11.3178 11.5386 12.5844 14.5132 12.5844C17.4878 12.5844 20 11.3173 20 9.81918V9.58396C18.9857 10.6916 16.9337 11.4348 14.5132 11.4348ZM9.02637 7.9922C9.02637 9.49079 11.5386 10.7574 14.5132 10.7574C17.4878 10.7574 20 9.49079 20 7.9922C20 6.4936 17.4856 5.22696 14.5132 5.22696C11.5408 5.22696 9.02637 6.4936 9.02637 7.9922ZM8.34918 7.9922C8.34918 6.77899 9.41688 5.73344 11.0686 5.12141C10.5452 5.04031 10.0163 4.99973 9.4866 5C6.51221 5 4 6.2649 4 7.76306C4 9.04208 5.8828 10.1936 8.34918 10.4666V9.91865H8.35309C8.35114 9.88477 8.34918 9.85349 8.34918 9.81918V7.9922Z"
+                fill="#B7BDCD"
+              />
+            </svg>
+          </span>
+          <span> Menu Item Three</span>
+        </a>
+      </li>
+      <li class="sidenav__list-item">
+        <span class="mr-3">
+          <svg
+            width="18"
+            height="18"
+            viewBox="0 0 18 18"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M1.8315 12.1311C1.81074 12.2865 1.80021 12.4432 1.8 12.6C1.8 14.7402 3.7242 16.4556 5.8689 16.1676C6.4926 17.2782 7.6806 18 9 18C10.3194 18 11.5074 17.2782 12.1311 16.1676C14.2713 16.4556 16.2 14.7402 16.2 12.6C16.2 12.4443 16.1892 12.2877 16.1685 12.1311C17.2782 11.5074 18 10.3185 18 9C18 7.6815 17.2782 6.4926 16.1685 5.8689C16.1892 5.7123 16.2 5.5557 16.2 5.4C16.2 3.2598 14.2713 1.5408 12.1311 1.8324C11.5074 0.7218 10.3194 0 9 0C7.6806 0 6.4926 0.7218 5.8689 1.8324C3.7242 1.5408 1.8 3.2598 1.8 5.4C1.8 5.5557 1.8108 5.7123 1.8315 5.8689C0.7218 6.4926 0 7.6815 0 9C0 10.3185 0.7218 11.5074 1.8315 12.1311ZM3.1293 7.2684L4.1211 7.0047L3.7305 6.057C3.64483 5.84853 3.60051 5.62539 3.6 5.4C3.6 4.4073 4.4073 3.6 5.4 3.6C5.6223 3.6 5.8491 3.645 6.057 3.7305L7.0056 4.1211L7.2693 3.1293C7.37087 2.74785 7.59561 2.41064 7.90859 2.17009C8.22157 1.92954 8.60526 1.79912 9 1.79912C9.39474 1.79912 9.77843 1.92954 10.0914 2.17009C10.4044 2.41064 10.6291 2.74785 10.7307 3.1293L10.9944 4.1211L11.943 3.7305C12.1509 3.645 12.3777 3.6 12.6 3.6C13.5927 3.6 14.4 4.4073 14.4 5.4C14.4 5.6223 14.355 5.85 14.2695 6.057L13.8789 7.0047L14.8707 7.2684C15.2513 7.37123 15.5873 7.59656 15.827 7.90956C16.0666 8.22256 16.1965 8.60579 16.1965 9C16.1965 9.39421 16.0666 9.77744 15.827 10.0904C15.5873 10.4034 15.2513 10.6288 14.8707 10.7316L13.8789 10.9953L14.2695 11.943C14.355 12.15 14.4 12.3777 14.4 12.6C14.4 13.5927 13.5927 14.4 12.6 14.4C12.3777 14.4 12.1509 14.355 11.943 14.2695L10.9944 13.8789L10.7307 14.8707C10.6291 15.2522 10.4044 15.5894 10.0914 15.8299C9.77843 16.0705 9.39474 16.2009 9 16.2009C8.60526 16.2009 8.22157 16.0705 7.90859 15.8299C7.59561 15.5894 7.37087 15.2522 7.2693 14.8707L7.0056 13.8789L6.057 14.2695C5.84851 14.3551 5.62538 14.3994 5.4 14.4C4.4073 14.4 3.6 13.5927 3.6 12.6C3.6 12.3777 3.645 12.15 3.7305 11.943L4.1211 10.9953L3.1293 10.7316C2.74874 10.6288 2.41265 10.4034 2.173 10.0904C1.93335 9.77744 1.80349 9.39421 1.80349 9C1.80349 8.60579 1.93335 8.22256 2.173 7.90956C2.41265 7.59656 2.74874 7.37123 3.1293 7.2684Z"
+              fill="#B7BDCD"
+            />
+            <path
+              d="M12.3674 7.83897L11.1002 6.56097L8.10227 9.53007L6.93587 8.36367L5.66327 9.63627L8.09687 12.0699L12.3674 7.83897Z"
+              fill="#B7BDCD"
+            />
+          </svg>
+        </span>
+        <a routerLink="/">
+          Menu Item Four
+        </a>
+      </li>
+      <li class="sidenav__list-item">
+        <a routerLink="/">
+          <span class="mr-3"
+            ><svg
+              width="16"
+              height="15"
+              viewBox="0 0 16 15"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M11.0828 12.3797V13.0872H1.06112V1.06112H11.0828V6.97308L12.1439 5.79406V0.825316C12.1439 0.37055 11.7734 0 11.3018 0H0.842159C0.387393 0 0 0.37055 0 0.825316V13.2893C0 13.7609 0.387393 14.1314 0.842159 14.1314H11.3186C11.7902 14.1314 12.1608 13.7609 12.1608 13.2893V11.3692L11.4871 12.1271C11.3692 12.2282 11.2344 12.3292 11.0828 12.3797Z"
+                fill="#B7BDCD"
+              />
+              <path
+                d="M3.11601 3.77283H9.04481C9.34799 3.77283 9.58379 3.53703 9.58379 3.23385C9.58379 2.94752 9.34799 2.69487 9.04481 2.69487H3.11601C2.81283 2.69487 2.57703 2.94752 2.57703 3.23385C2.57703 3.53703 2.81283 3.77283 3.11601 3.77283Z"
+                fill="#B7BDCD"
+              />
+              <path
+                d="M3.11601 6.33304H9.04481C9.34799 6.33304 9.58379 6.09724 9.58379 5.79406C9.58379 5.49089 9.34799 5.25508 9.04481 5.25508H3.11601C2.81283 5.25508 2.57703 5.49089 2.57703 5.79406C2.57703 6.09724 2.81283 6.33304 3.11601 6.33304Z"
+                fill="#B7BDCD"
+              />
+              <path
+                d="M9.56695 8.35417C9.56695 8.05099 9.33115 7.81519 9.02797 7.81519H3.11601C2.81283 7.81519 2.57703 8.05099 2.57703 8.35417C2.57703 8.6405 2.81283 8.89315 3.11601 8.89315H9.04481C9.33115 8.89315 9.56695 8.6405 9.56695 8.35417Z"
+                fill="#B7BDCD"
+              />
+              <path
+                d="M2.57703 10.8975C2.57703 11.2007 2.81283 11.4365 3.11601 11.4365H8.21949L8.40477 10.3754H3.11601C2.81283 10.3754 2.57703 10.6112 2.57703 10.8975Z"
+                fill="#B7BDCD"
+              />
+              <path
+                d="M9.43216 11.9924L10.7122 11.6218C10.7628 11.605 10.8133 11.5713 10.847 11.5376L11.2175 11.1334L9.71849 9.7859L9.34794 10.207C9.31425 10.2575 9.28057 10.308 9.28057 10.3586L9.06161 11.6723C9.01108 11.8745 9.21319 12.0597 9.43216 11.9924Z"
+                fill="#B7BDCD"
+              />
+              <path
+                d="M13.3343 5.7462L10.1755 9.27082L11.6807 10.6198L14.8395 7.09514L13.3343 5.7462Z"
+                fill="#B7BDCD"
+              />
+              <path
+                d="M15.9 5.44031L14.8557 4.4971C14.7378 4.37919 14.5357 4.39604 14.4346 4.51394L13.8114 5.22135L15.3104 6.56881L15.9336 5.86139C16.0347 5.74349 16.0179 5.55822 15.9 5.44031Z"
+                fill="#B7BDCD"
+              />
+            </svg>
+          </span>
+          <span>
+            Menu Item Five
+          </span>
+        </a>
+      </li>
+    </ul>
+  </aside>
+
+  <main class="main container-fluid">
+    <!-- <div class="row">
+      <div class="col-md-10 offset-md-1"> -->
+    <div class="row my-4">
+      <div class="col-md-6 col-12">
+        <div class="card special-card p-2">
+          <div class="card-body">
+            <div class="float-right">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M18 6L6 18"
+                  stroke="white"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M6 6L18 18"
+                  stroke="white"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </div>
+            <div class="card-title">
+              <h5 class="text-uppercase">Welcome back! Chidinma.</h5>
+            </div>
+            <div class="card-text">
+              <p class="text-light">
+                See overview of analytics and reporting metrics and a lot more
+                interesting stuffs you can do here.
+              </p>
+            </div>
+            <div class="row">
+              <div class="col-6 align-self-center">
+                <button class="btn btn-md mb-5 btn-light shadow">
+                  Take A Tour
+                </button>
+              </div>
+              <div class="col-6 align-self-center">
+                <img
+                  src="../../assets/images/data-trends.svg"
+                  alt="Data trends"
+                  class="img-fluid float-right"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-12 mt-md-0 mt-4">
+        <div class="card special-card-2 p-2">
+          <div class="card-body">
+            <div class="float-right">
+              <svg
+                [hidden]
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M18 6L6 18"
+                  stroke="white"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M6 6L18 18"
+                  stroke="white"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </div>
+            <div class="card-title">
+              <h5 class="text-uppercase">
+                OPTIMIZED APPLICATION PROCESSING
+              </h5>
+            </div>
+            <div class="card-text">
+              <p>
+                We’ve optimized the system to process your application as fast
+                as possible. Click on the button below to get started.
+              </p>
+            </div>
+            <div class="row">
+              <div class="col-6 align-self-center">
+                <button class="btn btn-md mb-4 shadow special-btn-2">
+                  New request
+                </button>
+              </div>
+              <div class="col-6">
+                <img
+                  src="../../assets/images/optimized_image.svg"
+                  alt="Optimized"
+                  class="img-fluid float-right"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-4 col-12 mt-5">
+        <app-chart
+          [title]="playData?.dataTitle"
+          [bgColor]="playData?.bgColor"
+          [totalQuantity]="playData?.totalPlayBudget"
+          [totalExhausted]="playData?.totalPlayBudgetSpent"
+          [totalRemnant]="playData?.totalPlayBudgetBalance"
+          [totalQuantityTitle]="playData?.totalQuantityTitle"
+          [totalExhaustedTitle]="playData?.totalExhaustedTitle"
+          [totalBalanceTitle]="playData?.totalBalanceTitle"
+          [balanceTile]="playData?.balanceTile"
+          [totalSpentTile]="playData?.totalSpentTile"
+        ></app-chart>
+      </div>
+
+      <div class="col-md-4 col-12 mt-5">
+        <app-chart
+          [title]="workData?.dataTitle"
+          [bgColor]="workData?.bgColor"
+          [totalQuantity]="workData?.totalWorkBudget"
+          [totalExhausted]="workData?.totalWorkBudgetSpent"
+          [totalRemnant]="workData?.totalWorkBudgetBalance"
+          [totalQuantityTitle]="workData?.totalQuantityTitle"
+          [totalExhaustedTitle]="workData?.totalExhaustedTitle"
+          [totalBalanceTitle]="workData?.totalBalanceTitle"
+          [balanceTile]="workData?.balanceTile"
+          [totalSpentTile]="workData?.totalSpentTile"
+        ></app-chart>
+      </div>
+
+      <div class="col-md-4 col-12 mt-5">
+        <app-chart
+          [title]="cardsData?.dataTitle"
+          [bgColor]="cardsData?.bgColor"
+          [totalQuantity]="cardsData?.totalCardsCount"
+          [totalExhausted]="cardsData?.totalCardsInUse"
+          [totalRemnant]="cardsData?.totalCardsInActive"
+          [totalQuantityTitle]="cardsData?.totalQuantityTitle"
+          [totalExhaustedTitle]="cardsData?.totalExhaustedTitle"
+          [totalBalanceTitle]="cardsData?.totalBalanceTitle"
+          [balanceTile]="cardsData?.balanceTile"
+          [totalSpentTile]="cardsData?.totalSpentTile"
+        ></app-chart>
+      </div>
+    </div>
+    <!-- </div>
+    </div> -->
+  </main>
+</main>

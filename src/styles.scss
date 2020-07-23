@@ -1,1 +1,33 @@
 /* You can add global styles to this file, and also import other style files */
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;600;900&display=swap");
+@import "~ngx-toastr/toastr";
+
+* {
+  box-sizing: border-box;
+}
+
+body:not(i) {
+  font-family: "Nunito Sans", sans-serif;
+}
+
+select.form-control {
+  width: 120px;
+  height: 40px;
+  background: #ffffff;
+  box-shadow: 0px 10px 20px rgba(184, 193, 209, 0.26);
+  border-radius: 5px;
+  float: right;
+}
+
+.cash {
+  color: #19304d;
+}
+
+.internal-card {
+  border-radius: 10px;
+  background-color: #fbfcfe;
+}
+
+.smaller-text-word {
+  font-size: 14px;
+}

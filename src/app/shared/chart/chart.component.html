@@ -1,0 +1,131 @@
+<div class="card" [ngStyle]="{ 'background-color': bgColor }">
+  <div class="card-body">
+    <div class="row">
+      <div class="col-7">
+        <p class="title font-weight-bold text-colored">
+          {{ title }}
+        </p>
+        <p>Summary</p>
+      </div>
+      <div class="col-5 float-right">
+        <select class="form-control">
+          <option *ngFor="let period of periods" [value]="period">{{
+            period
+          }}</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-10 offset-1 text-center">
+        <svg
+          width="152"
+          height="157"
+          viewBox="0 0 152 157"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M152 66C152 102.451 122.451 132 86 132C49.5492 132 20 102.451 20 66C20 29.5492 49.5492 0 86 0C122.451 0 152 29.5492 152 66ZM29.24 66C29.24 97.3477 54.6523 122.76 86 122.76C117.348 122.76 142.76 97.3477 142.76 66C142.76 34.6523 117.348 9.24 86 9.24C54.6523 9.24 29.24 34.6523 29.24 66Z"
+            fill="#E2EDF8"
+          />
+          <g filter="url(#filter0_d)">
+            <path
+              d="M86 127.38C86 129.932 83.929 132.017 81.3837 131.838C70.8991 131.103 60.7175 127.872 51.7 122.387C41.3639 116.1 32.9547 107.092 27.3916 96.3488C21.8284 85.6055 19.3253 73.5397 20.1556 61.47C20.8801 50.94 24.1175 40.7606 29.5679 31.7739C30.8911 29.5923 33.7893 29.1044 35.8731 30.5769C37.9568 32.0495 38.4344 34.924 37.1361 37.1206C32.6494 44.712 29.982 53.2645 29.3739 62.1042C28.6597 72.4842 30.8124 82.8607 35.5968 92.1C40.3811 101.339 47.6129 109.086 56.502 114.493C64.072 119.098 72.5959 121.855 81.385 122.572C83.9281 122.78 86 124.828 86 127.38Z"
+              fill="#1B5BAC"
+            />
+          </g>
+          <path
+            d="M65.336 71.144C64.2267 71.144 63.256 70.9093 62.424 70.44C61.6027 69.96 60.968 69.2827 60.52 68.408C60.0827 67.5333 59.864 66.5147 59.864 65.352C59.864 64.1893 60.0827 63.176 60.52 62.312C60.968 61.4373 61.6027 60.7653 62.424 60.296C63.256 59.816 64.2267 59.576 65.336 59.576C66.0933 59.576 66.808 59.6933 67.48 59.928C68.152 60.1627 68.7173 60.4933 69.176 60.92L68.488 62.424C67.976 62.0187 67.4693 61.7253 66.968 61.544C66.4667 61.352 65.9333 61.256 65.368 61.256C64.28 61.256 63.4373 61.608 62.84 62.312C62.2533 63.016 61.96 64.0293 61.96 65.352C61.96 66.6853 62.2533 67.704 62.84 68.408C63.4373 69.112 64.28 69.464 65.368 69.464C65.9333 69.464 66.4667 69.3733 66.968 69.192C67.4693 69 67.976 68.7013 68.488 68.296L69.176 69.8C68.7173 70.2267 68.152 70.5573 67.48 70.792C66.808 71.0267 66.0933 71.144 65.336 71.144ZM79.4806 71L78.3446 68.36H72.8566L71.7206 71H69.6406L74.7446 59.72H76.4246L81.5286 71H79.4806ZM73.5286 66.76H77.6566L75.5926 61.96L73.5286 66.76ZM82.7316 59.72H87.6596C88.865 59.72 89.8036 60.024 90.4756 60.632C91.1476 61.2293 91.4836 62.072 91.4836 63.16C91.4836 64.248 91.1476 65.096 90.4756 65.704C89.8036 66.312 88.865 66.616 87.6596 66.616H84.7956V71H82.7316V59.72ZM87.4036 65.032C88.8223 65.032 89.5316 64.4133 89.5316 63.176C89.5316 62.5467 89.3556 62.0827 89.0036 61.784C88.6516 61.4747 88.1183 61.32 87.4036 61.32H84.7956V65.032H87.4036ZM93.2941 71V59.72H100.846V61.352H95.3101V64.456H100.526V66.072H95.3101V69.368H100.846V71H93.2941ZM107.871 65.272L112.159 71H109.759L106.703 66.776L103.631 71H101.231L105.535 65.256L101.391 59.72H103.791L106.703 63.768L109.631 59.72H112.031L107.871 65.272Z"
+            fill="black"
+          />
+          <defs>
+            <filter
+              id="filter0_d"
+              x="0"
+              y="14.7327"
+              width="106"
+              height="142.116"
+              filterUnits="userSpaceOnUse"
+              color-interpolation-filters="sRGB"
+            >
+              <feFlood flood-opacity="0" result="BackgroundImageFix" />
+              <feColorMatrix
+                in="SourceAlpha"
+                type="matrix"
+                values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+              />
+              <feOffset dy="5" />
+              <feGaussianBlur stdDeviation="10" />
+              <feColorMatrix
+                type="matrix"
+                values="0 0 0 0 0.105882 0 0 0 0 0.356863 0 0 0 0 0.67451 0 0 0 0.4 0"
+              />
+              <feBlend
+                mode="normal"
+                in2="BackgroundImageFix"
+                result="effect1_dropShadow"
+              />
+              <feBlend
+                mode="normal"
+                in="SourceGraphic"
+                in2="effect1_dropShadow"
+                result="shape"
+              />
+            </filter>
+          </defs>
+        </svg>
+      </div>
+    </div>
+    <div class="card internal-card border-0">
+      <div class="card-body">
+        <div class="row mt-4">
+          <div class="col-6 cash">
+            <p class="smaller-text-word text-capitalize">
+              {{ totalQuantityTitle }}
+            </p>
+            <p class="font-weight-bold">{{ totalQuantity }}</p>
+          </div>
+          <div class="col-6">
+            <span class="smaller-text-word">
+              <svg
+                width="10"
+                height="10"
+                viewBox="0 0 10 10"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <circle cx="5" cy="5" r="5" fill="#1B5BAC" />
+              </svg>
+              {{ totalSpentTile }}
+            </span>
+            <br />
+            <p class="mt-3 smaller-text-word">
+              <svg
+                width="10"
+                height="10"
+                viewBox="0 0 10 10"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <circle cx="5" cy="5" r="5" fill="#D7E2ED" />
+              </svg>
+              {{ balanceTile }}
+            </p>
+          </div>
+        </div>
+
+        <div class="row mt-3 cash">
+          <div class="col-6">
+            <p class="smaller-text-word">{{ totalExhaustedTitle }}</p>
+            <p class="font-weight-bold">{{ totalExhausted }}</p>
+          </div>
+          <div class="col-6">
+            <p class="smaller-text-word">{{ totalBalanceTitle }}</p>
+            <p class="font-weight-bold">{{ totalRemnant }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
