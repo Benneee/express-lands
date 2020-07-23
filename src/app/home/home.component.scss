@@ -9,7 +9,8 @@
   height: 100vh;
 }
 
-.card {
+.special-card,
+.special-card-2 {
   width: 487px;
   height: 224px;
 }
@@ -47,6 +48,10 @@
     display: flex;
     align-items: flex-end;
   }
+}
+
+.text-colored {
+  color: #19304d;
 }
 
 .header__notifications-center {
@@ -93,6 +98,7 @@
 
   .log-out {
     // position: absolute;
+    cursor: pointer;
     width: 44px;
     height: 44px;
     background: #133f77;

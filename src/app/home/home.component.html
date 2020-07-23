@@ -1,4 +1,4 @@
-<main class="grid-container">
+<main class="grid-container mb-5 pb-5">
   <header class="header">
     <div class="menu-icon">
       <img
@@ -65,7 +65,10 @@
           </div>
 
           <div class="col-3 align-self-center justify-content-end">
-            <div class="log-out text-center align-content-center">
+            <div
+              class="log-out text-center align-content-center"
+              (click)="logOut()"
+            >
               <svg
                 width="20"
                 height="20"
@@ -421,6 +424,53 @@
             </div>
           </div>
         </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-4 col-12 mt-5">
+        <app-chart
+          [title]="playData?.dataTitle"
+          [bgColor]="playData?.bgColor"
+          [totalQuantity]="playData?.totalPlayBudget"
+          [totalExhausted]="playData?.totalPlayBudgetSpent"
+          [totalRemnant]="playData?.totalPlayBudgetBalance"
+          [totalQuantityTitle]="playData?.totalQuantityTitle"
+          [totalExhaustedTitle]="playData?.totalExhaustedTitle"
+          [totalBalanceTitle]="playData?.totalBalanceTitle"
+          [balanceTile]="playData?.balanceTile"
+          [totalSpentTile]="playData?.totalSpentTile"
+        ></app-chart>
+      </div>
+
+      <div class="col-md-4 col-12 mt-5">
+        <app-chart
+          [title]="workData?.dataTitle"
+          [bgColor]="workData?.bgColor"
+          [totalQuantity]="workData?.totalWorkBudget"
+          [totalExhausted]="workData?.totalWorkBudgetSpent"
+          [totalRemnant]="workData?.totalWorkBudgetBalance"
+          [totalQuantityTitle]="workData?.totalQuantityTitle"
+          [totalExhaustedTitle]="workData?.totalExhaustedTitle"
+          [totalBalanceTitle]="workData?.totalBalanceTitle"
+          [balanceTile]="workData?.balanceTile"
+          [totalSpentTile]="workData?.totalSpentTile"
+        ></app-chart>
+      </div>
+
+      <div class="col-md-4 col-12 mt-5">
+        <app-chart
+          [title]="cardsData?.dataTitle"
+          [bgColor]="cardsData?.bgColor"
+          [totalQuantity]="cardsData?.totalCardsCount"
+          [totalExhausted]="cardsData?.totalCardsInUse"
+          [totalRemnant]="cardsData?.totalCardsInActive"
+          [totalQuantityTitle]="cardsData?.totalQuantityTitle"
+          [totalExhaustedTitle]="cardsData?.totalExhaustedTitle"
+          [totalBalanceTitle]="cardsData?.totalBalanceTitle"
+          [balanceTile]="cardsData?.balanceTile"
+          [totalSpentTile]="cardsData?.totalSpentTile"
+        ></app-chart>
       </div>
     </div>
     <!-- </div>
