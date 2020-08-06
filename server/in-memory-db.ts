@@ -19,4 +19,14 @@ export let USER_SUBSCRIPTIONS = [
       auth: "S07QIsb2iKpvyjFwY-jPyA",
     },
   },
+  {
+    endpoint:
+      "https://fcm.googleapis.com/fcm/send/eFMe3FmEp8o:APA91bEAQiTWhaqC-OToF6chHX0axv-hgxZfMF17IgfKZ9ULnAF-KZdyobhVfAGNUSYKlkTKsI6xJxpqM1s0XFL1vyboC1ITCafJA0j7mcTnxYQRPY_qW72OID0ju1CytX7Xl3HANTZQ",
+    expirationTime: null,
+    keys: {
+      p256dh:
+        "BDudnF-BhxvhJcGXoPqFJ91A3FKu0G2vzUMVgJXmQ1vPcfGLx_geW6Nu8IZzOKClEGQJNgaW_ZDrc5t6NmW2QD8",
+      auth: "Ysim3EpVmyBHg6IOfzokcg",
+    },
+  },
 ];
